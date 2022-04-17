@@ -194,8 +194,9 @@ hr {
        text-align: left;
    }
 
-   .text p {
+   .leva>.text p {
        text-align: left;
+       width: 490px;
    }
 
    .happytravelers {
@@ -256,6 +257,7 @@ hr {
    }
 
    .text p {
+       text-align: left;
         width: 430px;
    }
 }
