@@ -8,11 +8,8 @@ body {
     background-color: #FAFAFA;
 }
 
-
-
 /* ---MOBILE FIRST DO 640px */
 /* prvni část*/
-
 .happytravelers {
     display: block;
     margin: 0 auto;
@@ -21,7 +18,7 @@ body {
 .happyh1 {
     margin: 40px 0 10px 0;
     font-size: 28px;
-    font-weight: 500;
+    /* font-weight: 500; */
     text-align: center;
 }
 
@@ -37,6 +34,7 @@ hr {
     text-align: center;
     font-size: 16px;
     font-weight: 400;
+    max-width: 550px;
     color: #8B8B8B;
 }
 
@@ -61,12 +59,11 @@ hr {
 
 
 /* druhá část*/
-
 .sluzbyh2 {
     margin: 60px 0 15px 0;
     text-align: center;
     font-size: 16px;
-    font-weight: 500;
+    /* font-weight: 500; */
 }
 
 .textbox {
@@ -91,8 +88,6 @@ hr {
 }
 
 /* třetí část*/
-
-
 .boxvylety,
 .boxlehatka,
 .boxkaravan {
@@ -104,9 +99,8 @@ hr {
     box-shadow: 0px 4px 6px #407BFF1F;
 }
 
-/* ----------------TABLET 640px ----------------- 1100px */
+/* --------TABLET 640px ---- 1100px */
 /* první část */
-
 @media screen and (min-width: 640px) {
     .happyh1 {
         margin-top: 30px;
@@ -126,8 +120,7 @@ hr {
        margin-right: 20px;
    }
 
-   /* cast druha */
-
+/* cast druha */
    .sluzbyh2 {
     margin-top: 80px;
    }
@@ -148,25 +141,26 @@ hr {
     .boxletenka {
         flex-direction: column;
         align-items: center;
-        padding: 40px 0 0 0;
+        padding: 40px 0 20px 0;
     }
+    
 
-
-   /* třetí část */
+/* třetí část */
     .boxvylety,
     .boxlehatka,
     .boxkaravan {
         flex-direction: column;
         align-items: center;
+        padding: 40px 0 20px 0;
     }
 }
 
-
 /* ---------------PC 1100px -----------------*/
+/* první část */
 @media screen and (min-width: 1100px) {
     
     body { 
-    padding: 60px 0;
+        padding: 60px 80px;
     }
 
     .kontejner {
@@ -178,12 +172,8 @@ hr {
         max-width: 1040px;
     }
 
-/* první část */
-
     .happycast {
         display: flex;
-        justify-content: center;
-        margin: 0;
     }
 
    .leva {
@@ -199,12 +189,12 @@ hr {
         margin-top: 70px;
    }
 
-   .text p {
+    hr {
+       margin: 0 0 30px 0;
        text-align: left;
    }
 
-   hr {
-       margin: 0 0 30px 0;
+   .text p {
        text-align: left;
    }
 
@@ -214,9 +204,11 @@ hr {
        max-width: 425px;
    }
 
+   .tlacitka {
+       margin-bottom: 40px;
+   }
 
 /* druhá část */
-
    .kancelarcast {
        display: flex;
        gap: 60px;
@@ -227,6 +219,7 @@ hr {
    }
 
    .sluzbyh2 {
+       margin-top: 40px;
        text-align: left;
    }
 
@@ -239,6 +232,14 @@ hr {
        margin: 0;
    }
 
+   .boxzajezd,
+   .boxdestinace,
+   .boxletenka, 
+   .boxvylety,
+   .boxlehatka,
+   .boxkaravan {
+        margin-bottom: 0;
+   }
 
 /* třetí část */
    .delegaticast {
