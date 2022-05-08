@@ -1,263 +1,269 @@
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
 
 body {
-    margin: 0;
-    padding: 60px 20px;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #FAFAFA;
+  margin: 0;
+  padding: 60px 20px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #fafafa;
 }
 
 /* ---MOBILE FIRST DO 640px */
 /* prvni část*/
 .happytravelers {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .happyh1 {
-    margin: 40px 0 10px 0;
-    font-size: 28px;
-    /* font-weight: 500; */
-    text-align: center;
+  margin: 40px 0 10px 0;
+  font-size: 28px;
+  /* font-weight: 500; */
+  text-align: center;
 }
 
 hr {
-    margin-bottom: 30px;
-    width: 60px;
-    border: 1px solid #407BFF;
+  margin-bottom: 30px;
+  width: 60px;
+  border: 1px solid #407bff;
 }
 
 .text p {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    max-width: 550px;
-    color: #8B8B8B;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 550px;
+  color: #8b8b8b;
 }
 
-.button {
-    display: block;
-    margin: 0 auto;
-    padding: 11px 30px;
-    border-radius: 20px;
-    border: none;
-    font-size: 14px;
-    font-weight: 400;
-    color: white;
+.buttons {
+  display: block;
+  margin: 0 auto;
+  padding: 11px 30px;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+
+.tlacitka {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .modre {
-    margin-bottom: 10px;
-    background-color: #407BFF;
+  background-color: #407bff;
 }
 .sede {
-    background-color: #8B8B8B;
+  background-color: #8b8b8b;
 }
-
 
 /* druhá část*/
 .sluzbyh2 {
-    margin: 60px 0 15px 0;
-    text-align: center;
-    font-size: 16px;
-    /* font-weight: 500; */
+  margin: 60px 0 15px 0;
+  text-align: center;
+  font-size: 16px;
+  /* font-weight: 500; */
 }
 
 .textbox {
-    margin-left: 20px;
-    font-size: 13px;
-    color: #8B8B8B;
+  margin-left: 20px;
+  font-size: 13px;
+  color: #8b8b8b;
 }
 
 .box {
-    margin: 30px 20px 0 20px;
+  margin: 30px 20px 0 20px;
 }
 
 .boxzajezd,
 .boxdestinace,
 .boxletenka {
-    display: flex;
-    margin-bottom: 15px;
-    padding: 30px 20px 20px 20px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0px 4px 6px #407BFF1F;
+  display: flex;
+  margin-bottom: 15px;
+  padding: 30px 20px 20px 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 4px 6px #407bff1f;
 }
 
 /* třetí část*/
 .boxvylety,
 .boxlehatka,
 .boxkaravan {
-    display: flex;
-    margin-bottom: 15px;
-    padding: 30px 20px 20px 30px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0px 4px 6px #407BFF1F;
+  display: flex;
+  margin-bottom: 15px;
+  padding: 30px 20px 20px 30px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 4px 6px #407bff1f;
 }
 
 /* --------TABLET 640px ---- 1100px */
 /* první část */
 @media screen and (min-width: 640px) {
-    .happyh1 {
-        margin-top: 30px;
-    }
+  .happyh1 {
+    margin-top: 30px;
+  }
 
-    .tlacitka {
-        display: flex;
-        justify-content: center;
-    }
+  .tlacitka {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
 
-    .modre,
-    .sede {
-       margin: 0;
-   }
+  .modre,
+  .sede {
+    margin: 0;
+  }
 
-   .modre {
-       margin-right: 20px;
-   }
-
-/* cast druha */
-   .sluzbyh2 {
+  /* cast druha */
+  .sluzbyh2 {
     margin-top: 80px;
-   }
-   
-   .box {
-        display: flex;
-        margin-top: 40px;
-        gap: 20px
-    }
+  }
 
-    .textbox {
-        margin: 20px 15px;
-        text-align: center;
-    }
+  .box {
+    display: flex;
+    margin-top: 40px;
+    gap: 20px;
+  }
 
-    .boxzajezd,
-    .boxdestinace,
-    .boxletenka {
-        flex-direction: column;
-        align-items: center;
-        padding: 40px 0 20px 0;
-    }
-    
+  .textbox {
+    margin: 20px 15px;
+    text-align: center;
+  }
 
-/* třetí část */
-    .boxvylety,
-    .boxlehatka,
-    .boxkaravan {
-        flex-direction: column;
-        align-items: center;
-        padding: 40px 0 20px 0;
-    }
+  .boxzajezd,
+  .boxdestinace,
+  .boxletenka {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 20px 0;
+  }
+
+  /* třetí část */
+  .boxvylety,
+  .boxlehatka,
+  .boxkaravan {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 20px 0;
+  }
 }
 
 /* ---------------PC 1100px -----------------*/
 /* první část */
 @media screen and (min-width: 1100px) {
-    
-    body { 
-        padding: 60px 80px;
-    }
+  body {
+    padding: 60px 80px;
+  }
 
-    .kontejner {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 80px;
-        margin: 0 auto; 
-        max-width: 1040px;
-    }
+  .kontejner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+    margin: 0 auto;
+    max-width: 1040px;
+  }
 
-    .happycast {
-        display: flex;
-    }
+  .happycast {
+    display: flex;
+  }
 
-   .leva {
-       order: 1;
-       margin-right: 60px;
-       display: flex;
-       flex-direction: column;
-       align-items: flex-start;
-       width: 490px;
-   }
+  .leva {
+    order: 1;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 490px;
+  }
 
-   .happyh1 {
-        margin-top: 70px;
-   }
+  .happyh1 {
+    margin-top: 70px;
+  }
 
-    hr {
-       margin: 0 0 30px 0;
-       text-align: left;
-   }
+  hr {
+    margin: 0 0 30px 0;
+    text-align: left;
+  }
 
-   .leva>.text p {
-       text-align: left;
-       width: 490px;
-   }
+  .leva > .text p {
+    text-align: left;
+    width: 490px;
+  }
 
-   .happytravelers {
-       order: 2;
-       margin: 0 30px;
-       max-width: 425px;
-   }
+  .happytravelers {
+    order: 2;
+    margin: 0 30px;
+    max-width: 425px;
+  }
 
-   .tlacitka {
-       margin-bottom: 40px;
-   }
+  .tlacitka {
+    margin-bottom: 40px;
+  }
 
-/* druhá část */
-   .kancelarcast {
-       display: flex;
-       gap: 60px;
-   }
+  /* druhá část */
+  .kancelarcast {
+    display: flex;
+    gap: 60px;
+  }
 
-   .prava {
-        order: 2;
-   }
+  .prava {
+    order: 2;
+  }
 
-   .sluzbyh2 {
-       margin-top: 40px;
-       text-align: left;
-   }
+  .sluzbyh2 {
+    margin-top: 40px;
+    text-align: left;
+  }
 
-   .prava p {
-       width: 430px;
-   }
+  .prava p {
+    width: 430px;
+  }
 
-   .box {
-       order: 1;
-       margin: 0;
-   }
+  .box {
+    order: 1;
+    margin: 0;
+  }
 
-   .boxzajezd,
-   .boxdestinace,
-   .boxletenka, 
-   .boxvylety,
-   .boxlehatka,
-   .boxkaravan {
-        margin-bottom: 0;
-   }
+  .boxzajezd,
+  .boxdestinace,
+  .boxletenka,
+  .boxvylety,
+  .boxlehatka,
+  .boxkaravan {
+    margin-bottom: 0;
+  }
 
-/* třetí část */
-   .delegaticast {
-       display: flex;
-       gap: 60px;
-   }
+  /* třetí část */
+  .delegaticast {
+    display: flex;
+    gap: 60px;
+  }
 
-   .L {
-       order: 1;
-   }
+  .L {
+    order: 1;
+  }
 
-   .boxlehatka {
-       order: 2;
-   }
+  .boxlehatka {
+    order: 2;
+  }
 
-   .text p {
-       text-align: left;
-       width: 430px;
-   }
+  .text p {
+    text-align: left;
+    width: 430px;
+  }
 }
